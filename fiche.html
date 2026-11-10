@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fiche et PDF — L’arbre d’Isabelle</title>
+  <link rel="stylesheet" href="fiche.css?v=20261110">
+</head>
+<body>
+  <main id="fiche">
+    <a id="retour" href="./">← Revenir à l’arbre</a>
+    <p class="eyebrow">L’ARBRE D’ISABELLE · REGISTRE & EXPLICATION</p>
+    <h1 id="titre">Chargement de la fiche</h1><p id="preuve"></p>
+    <nav id="actions" hidden>
+      <a id="pdf-open" class="primary" target="_blank" rel="noopener">Ouvrir le PDF</a>
+      <a id="pdf" download>Télécharger le PDF</a>
+      <a id="source" target="_blank" rel="noopener">Consulter la source</a>
+      <button id="imprimer" type="button">Imprimer la fiche</button>
+    </nav>
+    <p class="note" id="pdf-note" hidden></p>
+    <h2>Ce que cette pièce nous apprend</h2><p id="lecture"></p>
+    <h2>Référence précise</h2><p id="reference"></p>
+    <section id="images"></section>
+    <div id="source-fallback" hidden>
+      <h2>Adresse de la source</h2>
+      <p>Vous pouvez aussi copier cette adresse dans votre navigateur.</p>
+      <input id="adresse-source" type="text" readonly aria-label="Adresse de la source">
+      <button id="copier-source">Copier l’adresse</button><p id="copie-status" role="status"></p>
+    </div>
+    <p id="repere" class="note"></p>
+  </main>
+  <script src="data.js?v=20261110"></script>
+  <script src="fiche.js?v=20261110"></script>
+</body>
+</html>
