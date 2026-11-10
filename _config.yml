@@ -1,0 +1,7 @@
+# The public repository serves the unchanged archive files directly.
+# Keeping them out of the Pages bundle prevents its deployment timeout.
+exclude:
+  - "*.pdf"
+  - "*.jpg"
+  - "*.jpeg"
+  - "*.png"
